@@ -504,6 +504,7 @@ namespace SocketIO {
             }
             catch ( Exception ex ) // For debugging
             {
+				isConnecting = false;
                 // Error happened during connect operation.
                 if (websocket != null ) {
                     websocket.Dispose();
