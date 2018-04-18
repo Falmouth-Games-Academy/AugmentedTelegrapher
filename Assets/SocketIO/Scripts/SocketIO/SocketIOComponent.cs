@@ -445,6 +445,7 @@ namespace SocketIO {
         public MessageWebSocket websocket;
         public DataWriter writer;
         private bool isConnected = false;
+		private bool isConnecting = false;
         public bool autoConnect = true;
         private object eventQueueLock;
 
@@ -479,12 +480,13 @@ namespace SocketIO {
                     EmitEvent(eventQueue.Dequeue());
                 }
             }
-            if ( !isConnected ) {
+            if ( !isConnected && !isConnecting ) {
                 await ConnectWebsocket();
             }
         }
 
         private async Task ConnectWebsocket() {
+			isConnecting = true;
             websocket = new MessageWebSocket();
             Uri server = new Uri(HoloHubWS);
 
@@ -494,6 +496,7 @@ namespace SocketIO {
 
             try {
                 await websocket.ConnectAsync(server);
+				isConnecting = false;
                 isConnected = true;
                 
                 writer = new DataWriter(websocket.OutputStream);
