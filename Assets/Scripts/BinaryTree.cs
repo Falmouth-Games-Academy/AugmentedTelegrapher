@@ -246,6 +246,7 @@ public class BinaryTree : MonoBehaviour {
         outputText.GetComponent<TextMeshPro>().text = phrase;
     }
 
+
     void OnMorseInput(char morseSymbol)
     {
         addToPath(morseSymbol);

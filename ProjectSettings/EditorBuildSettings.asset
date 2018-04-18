@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/HololensStage.unity
+    guid: 4d6a5b19e81b15347b88b98f1cddfc9b
+  - enabled: 1
     path: Assets/Scenes/main.unity
     guid: 7decc8958e392ec4499e152854a688f5
   - enabled: 1
@@ -14,3 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BinaryTree-morse-key.unity
     guid: fa9456b8c4b7335448eb9804e36a0f0e
+  - enabled: 1
+    path: Assets/Scenes/Galvanometer.unity
+    guid: e46dc2011d5958f4e94083d361ef249e
