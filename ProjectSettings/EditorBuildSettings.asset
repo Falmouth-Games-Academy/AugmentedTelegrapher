@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/main.unity
+    guid: 7decc8958e392ec4499e152854a688f5
+  - enabled: 1
+    path: Assets/Scenes/BinaryTree-hololens.unity
+    guid: 7d9bc31115b3f4d44ace0aba2c51fc07
+  - enabled: 1
+    path: Assets/Scenes/BinaryTree-morse-key.unity
+    guid: fa9456b8c4b7335448eb9804e36a0f0e
