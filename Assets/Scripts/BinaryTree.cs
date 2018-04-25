@@ -37,7 +37,12 @@ public class BinaryTree : MonoBehaviour {
     private string phrase = "";
 
     public static SocketIOComponent socket;
-    
+
+    //Audio
+    [FMODUnity.EventRef]
+    string Fmod_inputSound;
+    FMOD.Studio.EventInstance Fmod_inputSoundInst;
+
 
     // Use this for initialization
     void Start () {
@@ -66,6 +71,11 @@ public class BinaryTree : MonoBehaviour {
 
         camera = Camera.main;
         initRoot();
+
+        //Audio
+        Fmod_inputSoundInst = FMODUnity.RuntimeManager.CreateInstance(Fmod_inputSound);
+        Fmod_inputSoundInst.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(this.transform, GetComponent<Rigidbody>()));
+
     }
 
     // Update is called once per frame
@@ -136,6 +146,9 @@ public class BinaryTree : MonoBehaviour {
         {
             rootNodeScript.Traverse();
         }
+
+        //Audio
+        Fmod_inputSoundInst.start();
     }
 
     void initRoot()
