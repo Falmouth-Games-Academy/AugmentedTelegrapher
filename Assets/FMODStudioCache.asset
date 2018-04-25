@@ -23,7 +23,7 @@ MonoBehaviour:
   - {fileID: 114084071111401874}
   MasterBankRef: {fileID: 114424681464407950}
   StringsBankRef: {fileID: 114931986640206854}
-  stringsBankWriteTime: 636601854780000000
+  stringsBankWriteTime: 636602506720000000
   cacheVersion: 2
 --- !u!114 &114084071111401874
 MonoBehaviour:
@@ -44,8 +44,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 45
+  MaxDistance: 1650
   Length: 484
 --- !u!114 &114137203890434474
 MonoBehaviour:
@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Z:\Projects\Augmented Telegrapher\Unity 2017.3.0\AugmentedTelegrapher\AugmentedTelegrapher\FmodBanks\Desktop\Dialouge.bank
-  lastModified: 636601854780000000
+  lastModified: 636602506720000000
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -122,11 +122,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Z:\Projects\Augmented Telegrapher\Unity 2017.3.0\AugmentedTelegrapher\AugmentedTelegrapher\FmodBanks\Desktop\Master
     Bank.bank
-  lastModified: 636601854780000000
+  lastModified: 636602506720000000
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 27904
+    Value: 28192
   Exists: 1
 --- !u!114 &114751164605381354
 MonoBehaviour:
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Z:\Projects\Augmented Telegrapher\Unity 2017.3.0\AugmentedTelegrapher\AugmentedTelegrapher\FmodBanks\Desktop\PrototypingBank.bank
-  lastModified: 636601854780000000
+  lastModified: 636602506720000000
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: FmodBanks\Desktop\Master Bank.strings.bank
-  lastModified: 636601854780000000
+  lastModified: 636602506720000000
   LoadResult: 0
   FileSizes:
   - Name: 
