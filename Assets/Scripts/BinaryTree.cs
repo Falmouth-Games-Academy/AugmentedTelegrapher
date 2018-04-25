@@ -40,7 +40,7 @@ public class BinaryTree : MonoBehaviour {
 
     //Audio
     [FMODUnity.EventRef]
-    string Fmod_inputSound;
+    string Fmod_inputSound = "event:/Morse Key/Switch";
     FMOD.Studio.EventInstance Fmod_inputSoundInst;
 
 

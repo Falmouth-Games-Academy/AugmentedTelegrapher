@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour {
 
-    private string[] availableScenes = { "Galvanometer" };
+    private string[] availableScenes = {"BinaryTree", "Galvanometer" };
 
 	// Use this for initialization
 	void Start () {
