@@ -43,6 +43,10 @@ public class BinaryTree : MonoBehaviour {
     string Fmod_inputSound = "event:/Morse Key/Switch";
     FMOD.Studio.EventInstance Fmod_inputSoundInst;
 
+    [FMODUnity.EventRef]
+    string Fmod_selectedSound = "event:/Morse Key/Select";
+    FMOD.Studio.EventInstance Fmod_selectedSoundInst;
+
 
     // Use this for initialization
     void Start () {
@@ -76,6 +80,9 @@ public class BinaryTree : MonoBehaviour {
         Fmod_inputSoundInst = FMODUnity.RuntimeManager.CreateInstance(Fmod_inputSound);
         Fmod_inputSoundInst.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(this.transform, GetComponent<Rigidbody>()));
 
+        Fmod_selectedSoundInst = FMODUnity.RuntimeManager.CreateInstance(Fmod_selectedSound);
+        Fmod_selectedSoundInst.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(this.transform, GetComponent<Rigidbody>()));
+        //
     }
 
     // Update is called once per frame
@@ -102,6 +109,7 @@ public class BinaryTree : MonoBehaviour {
                 rootNodeScript.Traverse();
                 //TreeNode.getCurrentChar();
                 Debug.Log(TreeNode.currentChar);
+
             }
         }
 
@@ -111,6 +119,7 @@ public class BinaryTree : MonoBehaviour {
         // ADD LETTER
         if (inputActive && nowTime - lastLetterInputTime > inputLetterDelay)
         {
+
             rootNodeScript = rootNode.GetComponent<TreeNode>();
         
             // checked for space - if there is no space add onn
@@ -127,6 +136,11 @@ public class BinaryTree : MonoBehaviour {
 
             // send message for complete
            Debug.Log(phrase);
+
+            //Audio
+            Fmod_selectedSoundInst.start();
+
+
         }
 
         // FINISH THE SENTENCE
@@ -267,6 +281,7 @@ public class BinaryTree : MonoBehaviour {
 
     public void OnHardware(SocketIOEvent e)
     {
+
         char morseSymbol = '-';
 
         if (e.data.GetField("letter").str == ".") morseSymbol = '.'; // addToPath('.');
