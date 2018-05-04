@@ -24,7 +24,7 @@ MonoBehaviour:
   - {fileID: 114770107606469142}
   MasterBankRef: {fileID: 114443719875723886}
   StringsBankRef: {fileID: 114931986640206854}
-  stringsBankWriteTime: 636609637840000000
+  stringsBankWriteTime: 636610419720000000
   cacheVersion: 2
 --- !u!114 &114084071111401874
 MonoBehaviour:
@@ -47,7 +47,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 45
   MaxDistance: 1650
-  Length: 165
+  Length: 293
 --- !u!114 &114137203890434474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,11 +142,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Z:\Projects\Augmented Telegrapher\Unity 2017.3.0\AugmentedTelegrapher\FmodBanks\Desktop\Master
     Bank.bank
-  lastModified: 636609637840000000
+  lastModified: 636610419720000000
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 33120
+    Value: 39456
   Exists: 1
 --- !u!114 &114751164605381354
 MonoBehaviour:
@@ -187,7 +187,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 873
+  Length: 632
 --- !u!114 &114843420638413714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,7 +200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Z:\Projects\Augmented Telegrapher\Unity 2017.3.0\AugmentedTelegrapher\FmodBanks\Desktop\Dialouge.bank
-  lastModified: 636609637840000000
+  lastModified: 636610419720000000
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -218,11 +218,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: FmodBanks\Desktop\Master Bank.strings.bank
-  lastModified: 636609637840000000
+  lastModified: 636610419720000000
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 1026
+    Value: 1070
   Exists: 1
 --- !u!114 &114982300914304410
 MonoBehaviour:
@@ -258,7 +258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Z:\Projects\Augmented Telegrapher\Unity 2017.3.0\AugmentedTelegrapher\FmodBanks\Desktop\PrototypingBank.bank
-  lastModified: 636609637840000000
+  lastModified: 636610419720000000
   LoadResult: 0
   FileSizes:
   - Name: 
