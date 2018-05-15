@@ -40,13 +40,21 @@ public class BinaryTree : MonoBehaviour {
 
     //Audio
     [FMODUnity.EventRef]
-    string Fmod_inputSound = "event:/Morse Key/Switch";
-    FMOD.Studio.EventInstance Fmod_inputSoundInst;
+    string f_LInput = "event:/Morse Key/LInput";
+    FMOD.Studio.EventInstance f_LInputInst;
 
     [FMODUnity.EventRef]
-    string Fmod_selectedSound = "event:/Morse Key/Select";
-    FMOD.Studio.EventInstance Fmod_selectedSoundInst;
+    string f_RInput = "event:/Morse Key/RInput";
+    FMOD.Studio.EventInstance f_RInputInst;
 
+    [FMODUnity.EventRef]
+    string f_AddLetter = "event:/Morse Key/AddLetter";
+    FMOD.Studio.EventInstance f_AddLetterInst;
+
+    [FMODUnity.EventRef]
+    string f_Reset = "event:/Morse Key/Reset";
+    FMOD.Studio.EventInstance f_ResetInst;
+    //
 
     // Use this for initialization
     void Start () {
@@ -77,11 +85,17 @@ public class BinaryTree : MonoBehaviour {
         initRoot();
 
         //Audio
-        Fmod_inputSoundInst = FMODUnity.RuntimeManager.CreateInstance(Fmod_inputSound);
-        Fmod_inputSoundInst.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(this.transform, GetComponent<Rigidbody>()));
+        f_LInputInst = FMODUnity.RuntimeManager.CreateInstance(f_LInput);
+        f_LInputInst.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(this.transform, GetComponent<Rigidbody>()));
 
-        Fmod_selectedSoundInst = FMODUnity.RuntimeManager.CreateInstance(Fmod_selectedSound);
-        Fmod_selectedSoundInst.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(this.transform, GetComponent<Rigidbody>()));
+        f_RInputInst = FMODUnity.RuntimeManager.CreateInstance(f_RInput);
+        f_RInputInst.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(this.transform, GetComponent<Rigidbody>()));
+
+        f_AddLetterInst = FMODUnity.RuntimeManager.CreateInstance(f_AddLetter);
+        f_AddLetterInst.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(this.transform, GetComponent<Rigidbody>()));
+
+        f_ResetInst = FMODUnity.RuntimeManager.CreateInstance(f_Reset);
+        f_ResetInst.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(this.transform, GetComponent<Rigidbody>()));
         //
     }
 
@@ -89,9 +103,23 @@ public class BinaryTree : MonoBehaviour {
     void Update() {
 
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow)) addToPath('.');
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            addToPath('.');
+            
+            //Audio
+            f_LInputInst.start();
+            //
+        }
 
-        if (Input.GetKeyDown(KeyCode.RightArrow)) addToPath('-');
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            addToPath('-');
+            
+            //Audio
+            f_RInputInst.start();
+            //
+        }
 
         if (Input.GetKey(KeyCode.Delete))
         {
@@ -99,6 +127,9 @@ public class BinaryTree : MonoBehaviour {
             phrase = "";
             outputText.GetComponent<TextMeshPro>().text = phrase;
 
+            //Audio
+            f_ResetInst.start();
+            //
         }
 
         if (Input.GetKeyDown("space"))
@@ -138,17 +169,15 @@ public class BinaryTree : MonoBehaviour {
            Debug.Log(phrase);
 
             //Audio
-            Fmod_selectedSoundInst.start();
-
-
+            f_AddLetterInst.start();
+            //
         }
 
         // FINISH THE SENTENCE
         if (inputActive && nowTime - lastLetterInputTime > inputEndDelay)
         {
-            
-        }
 
+        }
     }
 
     public void addToPath(char dir)
@@ -161,8 +190,6 @@ public class BinaryTree : MonoBehaviour {
             rootNodeScript.Traverse();
         }
 
-        //Audio
-        Fmod_inputSoundInst.start();
     }
 
     void initRoot()

@@ -20,11 +20,13 @@ MonoBehaviour:
   - {fileID: 114137203890434474}
   - {fileID: 114178278922924310}
   - {fileID: 114982300914304410}
-  - {fileID: 114084071111401874}
-  - {fileID: 114770107606469142}
+  - {fileID: 114303139753571840}
+  - {fileID: 114168255221967974}
+  - {fileID: 114699692712990256}
+  - {fileID: 114425301061281404}
   MasterBankRef: {fileID: 114443719875723886}
   StringsBankRef: {fileID: 114931986640206854}
-  stringsBankWriteTime: 636610419720000000
+  stringsBankWriteTime: 636620003660000000
   cacheVersion: 2
 --- !u!114 &114084071111401874
 MonoBehaviour:
@@ -70,6 +72,28 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1800
+--- !u!114 &114168255221967974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Morse Key/LInput
+  guid: 2a4dd82bc30bcb4cb9d805b75db09b90
+  Banks:
+  - {fileID: 114443719875723886}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 45
+  MaxDistance: 1650
+  Length: 178
 --- !u!114 &114178278922924310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,6 +116,28 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 280924
+--- !u!114 &114303139753571840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Morse Key/RInput
+  guid: 209797a6ac22404aa64410d719205531
+  Banks:
+  - {fileID: 114443719875723886}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 45
+  MaxDistance: 1650
+  Length: 352
 --- !u!114 &114346709788574948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,6 +175,28 @@ MonoBehaviour:
   - Name: 
     Value: 28192
   Exists: 1
+--- !u!114 &114425301061281404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Morse Key/Reset
+  guid: 82b350b7165cc748b409a85b488a4f55
+  Banks:
+  - {fileID: 114443719875723886}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1634
 --- !u!114 &114443719875723886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,12 +210,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Z:\Projects\Augmented Telegrapher\Unity 2017.3.0\AugmentedTelegrapher\FmodBanks\Desktop\Master
     Bank.bank
-  lastModified: 636610419720000000
+  lastModified: 636620003660000000
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 39456
+    Value: 76800
   Exists: 1
+--- !u!114 &114699692712990256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Morse Key/AddLetter
+  guid: 6b85da4752e19b4a9f08bc5fba80e3a2
+  Banks:
+  - {fileID: 114443719875723886}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 632
 --- !u!114 &114751164605381354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,7 +290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Z:\Projects\Augmented Telegrapher\Unity 2017.3.0\AugmentedTelegrapher\FmodBanks\Desktop\Dialouge.bank
-  lastModified: 636610419720000000
+  lastModified: 636620003660000000
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -218,11 +308,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: FmodBanks\Desktop\Master Bank.strings.bank
-  lastModified: 636610419720000000
+  lastModified: 636620003660000000
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 1070
+    Value: 1210
   Exists: 1
 --- !u!114 &114982300914304410
 MonoBehaviour:
@@ -258,7 +348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Z:\Projects\Augmented Telegrapher\Unity 2017.3.0\AugmentedTelegrapher\FmodBanks\Desktop\PrototypingBank.bank
-  lastModified: 636610419720000000
+  lastModified: 636620003660000000
   LoadResult: 0
   FileSizes:
   - Name: 
