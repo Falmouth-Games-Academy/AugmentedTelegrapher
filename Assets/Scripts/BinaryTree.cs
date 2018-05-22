@@ -25,8 +25,8 @@ public class BinaryTree : MonoBehaviour {
     private int degs = 0;
 
     private float lastLetterInputTime = 0.0f;
-    private float inputLetterDelay = 3;
-    private float inputSpaceDelay = 5;
+    private float inputLetterDelay = 1.5f;
+    private float inputSpaceDelay = 6;
     private float inputEndDelay = 7;
 
     // decide what to do when
@@ -129,12 +129,16 @@ public class BinaryTree : MonoBehaviour {
            Debug.Log(phrase);
         }
 
-        // FINISH THE SENTENCE
-        if (inputActive && nowTime - lastLetterInputTime > inputEndDelay)
-        {
-            
-        }
 
+
+        // FINISH THE SENTENCE
+        if (phrase.Length > 0)
+        {
+            if (nowTime - lastLetterInputTime > inputSpaceDelay && phrase[phrase.Length - 1] != '_')
+            {
+                phrase += "_";
+            }
+        }
     }
 
     public void addToPath(char dir)

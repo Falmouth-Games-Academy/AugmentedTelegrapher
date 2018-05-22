@@ -6,11 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour {
 
-    private string[] availableScenes = {"BinaryTree", "Galvanometer" };
+    private string[] availableScenes = { "BinaryTree-morse-key", "Galvanometer-models" };
+    public int startingScene = 0;
 
 	// Use this for initialization
 	void Start () {
-        SceneManager.LoadScene(availableScenes[0], LoadSceneMode.Additive);
+        SceneManager.LoadScene(availableScenes[startingScene], LoadSceneMode.Additive);
     }
 	
 	// Update is called once per frame

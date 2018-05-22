@@ -12,6 +12,7 @@ public class SpeechManager : MonoBehaviour
     private string sceneOne = "BinaryTree-hololens";
     private string sceneTwo = "BinaryTree-morse-key";
 
+    private GameObject morseTree;
     
     KeywordRecognizer keywordRecognizer = null;
     Dictionary<string, System.Action> keywords;
@@ -19,13 +20,19 @@ public class SpeechManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        
-
         keywords = new Dictionary<string, System.Action>();
         keywords.Add("Reset Morse Code", () =>
         {
-            // Call the OnReset method on every descendant object.
-            this.BroadcastMessage("OnReset", 0, SendMessageOptions.DontRequireReceiver);
+            morseTree = GameObject.Find("Tree");
+            Debug.Log("Reset Morse Code");
+
+            if (morseTree != null)
+            {
+
+
+                // Call the OnReset method on every descendant object.
+                morseTree.BroadcastMessage("OnReset", 0, SendMessageOptions.DontRequireReceiver);
+            }
         });
 
         keywords.Add("Load Scene One", () =>

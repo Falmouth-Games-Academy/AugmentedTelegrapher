@@ -26,3 +26,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BinaryTree.unity
     guid: 715e738b5e8a11b408bbec3ac3cc2a02
+  - enabled: 1
+    path: Assets/Scenes/Galvanometer-models.unity
+    guid: 0bc13bf8cf30f834787bb61ae505ebd2
