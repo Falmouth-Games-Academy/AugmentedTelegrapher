@@ -40,9 +40,21 @@ public class BinaryTree : MonoBehaviour {
 
     //Audio
     [FMODUnity.EventRef]
-    string Fmod_inputSound = "event:/Morse Key/Switch";
-    FMOD.Studio.EventInstance Fmod_inputSoundInst;
+    string f_LInput = "event:/Morse Key/LInput";
+    FMOD.Studio.EventInstance f_LInputInst;
 
+    [FMODUnity.EventRef]
+    string f_RInput = "event:/Morse Key/RInput";
+    FMOD.Studio.EventInstance f_RInputInst;
+
+    [FMODUnity.EventRef]
+    string f_AddLetter = "event:/Morse Key/AddLetter";
+    FMOD.Studio.EventInstance f_AddLetterInst;
+
+    [FMODUnity.EventRef]
+    string f_Reset = "event:/Morse Key/Reset";
+    FMOD.Studio.EventInstance f_ResetInst;
+    //
 
     // Use this for initialization
     void Start () {
@@ -73,18 +85,41 @@ public class BinaryTree : MonoBehaviour {
         initRoot();
 
         //Audio
-        Fmod_inputSoundInst = FMODUnity.RuntimeManager.CreateInstance(Fmod_inputSound);
-        Fmod_inputSoundInst.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(this.transform, GetComponent<Rigidbody>()));
+        f_LInputInst = FMODUnity.RuntimeManager.CreateInstance(f_LInput);
+        f_LInputInst.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(this.transform, GetComponent<Rigidbody>()));
 
+        f_RInputInst = FMODUnity.RuntimeManager.CreateInstance(f_RInput);
+        f_RInputInst.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(this.transform, GetComponent<Rigidbody>()));
+
+        f_AddLetterInst = FMODUnity.RuntimeManager.CreateInstance(f_AddLetter);
+        f_AddLetterInst.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(this.transform, GetComponent<Rigidbody>()));
+
+        f_ResetInst = FMODUnity.RuntimeManager.CreateInstance(f_Reset);
+        f_ResetInst.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(this.transform, GetComponent<Rigidbody>()));
+        //
     }
 
     // Update is called once per frame
     void Update() {
 
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow)) addToPath('.');
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            addToPath('.');
+            
+            //Audio
+            f_LInputInst.start();
+            //
+        }
 
-        if (Input.GetKeyDown(KeyCode.RightArrow)) addToPath('-');
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            addToPath('-');
+            
+            //Audio
+            f_RInputInst.start();
+            //
+        }
 
         if (Input.GetKey(KeyCode.Delete))
         {
@@ -92,6 +127,9 @@ public class BinaryTree : MonoBehaviour {
             phrase = "";
             outputText.GetComponent<TextMeshPro>().text = phrase;
 
+            //Audio
+            f_ResetInst.start();
+            //
         }
 
         if (Input.GetKeyDown("space"))
@@ -102,6 +140,7 @@ public class BinaryTree : MonoBehaviour {
                 rootNodeScript.Traverse();
                 //TreeNode.getCurrentChar();
                 Debug.Log(TreeNode.currentChar);
+
             }
         }
 
@@ -111,6 +150,7 @@ public class BinaryTree : MonoBehaviour {
         // ADD LETTER
         if (inputActive && nowTime - lastLetterInputTime > inputLetterDelay)
         {
+
             rootNodeScript = rootNode.GetComponent<TreeNode>();
         
             // checked for space - if there is no space add onn
@@ -127,6 +167,10 @@ public class BinaryTree : MonoBehaviour {
 
             // send message for complete
            Debug.Log(phrase);
+
+            //Audio
+            f_AddLetterInst.start();
+            //
         }
 
 
@@ -134,10 +178,12 @@ public class BinaryTree : MonoBehaviour {
         // FINISH THE SENTENCE
         if (phrase.Length > 0)
         {
+
             if (nowTime - lastLetterInputTime > inputSpaceDelay && phrase[phrase.Length - 1] != '_')
             {
                 phrase += "_";
             }
+
         }
     }
 
@@ -151,8 +197,6 @@ public class BinaryTree : MonoBehaviour {
             rootNodeScript.Traverse();
         }
 
-        //Audio
-        Fmod_inputSoundInst.start();
     }
 
     void initRoot()
@@ -271,6 +315,7 @@ public class BinaryTree : MonoBehaviour {
 
     public void OnHardware(SocketIOEvent e)
     {
+
         char morseSymbol = '-';
 
         if (e.data.GetField("letter").str == ".") morseSymbol = '.'; // addToPath('.');
