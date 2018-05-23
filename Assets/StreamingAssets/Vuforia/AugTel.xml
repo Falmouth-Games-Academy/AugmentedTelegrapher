@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="AHPD00254" size="0.266360 0.394607" />
+    <ImageTarget name="AHPD00147" size="0.261090 0.394594" />
     <ImageTarget name="Astronaut_scaled" size="0.228290 0.394603" />
   </Tracking>
 </QCARConfig>
