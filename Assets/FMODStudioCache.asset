@@ -26,7 +26,7 @@ MonoBehaviour:
   - {fileID: 114061804112093720}
   MasterBankRef: {fileID: 114451954878659490}
   StringsBankRef: {fileID: 114207388972624636}
-  stringsBankWriteTime: 636625869853240094
+  stringsBankWriteTime: 636625907636476380
   cacheVersion: 2
 --- !u!114 &114061804112093720
 MonoBehaviour:
@@ -62,7 +62,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: C:\Users\Developer\Documents\AlcwynParker\AugmentedTelegrapher\FmodBanks\Desktop\Dialouge.bank
-  lastModified: 636607293893283639
+  lastModified: 636625907636441366
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: FmodBanks\Desktop\Master Bank.strings.bank
-  lastModified: 636625869853240094
+  lastModified: 636625907636476380
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\Developer\Documents\AlcwynParker\AugmentedTelegrapher\FmodBanks\Desktop\Master
     Bank.bank
-  lastModified: 636625869853225090
+  lastModified: 636625907636461370
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -183,7 +183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: C:\Users\Developer\Documents\AlcwynParker\AugmentedTelegrapher\FmodBanks\Desktop\PrototypingBank.bank
-  lastModified: 636607293893439926
+  lastModified: 636625907636661363
   LoadResult: 0
   FileSizes:
   - Name: 

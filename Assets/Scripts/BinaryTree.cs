@@ -318,9 +318,18 @@ public class BinaryTree : MonoBehaviour {
 
         char morseSymbol = '-';
 
-        if (e.data.GetField("letter").str == ".") morseSymbol = '.'; // addToPath('.');
-        if (e.data.GetField("letter").str == "-") morseSymbol = '-'; // addToPath('-');
-
+        if (e.data.GetField("letter").str == ".")
+        {
+            morseSymbol = '.'; // addToPath('.');
+                               //Audio
+            f_LInputInst.start();
+        }
+        if (e.data.GetField("letter").str == "-")
+        {
+            morseSymbol = '-'; // addToPath('-');
+                               //Audio
+            f_RInputInst.start();
+        }
         Debug.Log("Symbol: " + morseSymbol);
 
         GameObject messageTarget = null;
