@@ -45,7 +45,8 @@ public class SceneController : MonoBehaviour {
     {
         for (int i = 0; i < this.sceneList.positions.Length; i++)
         {
-
+            // Only specifying the sceneName or sceneBuildIndex will load the Scene with the Single mode
+            SceneManager.LoadScene(this.sceneList.positions[i].name, LoadSceneMode.Additive);
         }
     }
 }

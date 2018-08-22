@@ -9,23 +9,29 @@ EditorBuildSettings:
     path: Assets/Scenes/HololensStage.unity
     guid: 4d6a5b19e81b15347b88b98f1cddfc9b
   - enabled: 1
-    path: Assets/Scenes/main.unity
-    guid: 7decc8958e392ec4499e152854a688f5
+    path: Assets/Scenes/Sections/1-Datum.unity
+    guid: 8edfce2b41e6a9d43a13b6b6f4c47ff4
   - enabled: 1
-    path: Assets/Scenes/BinaryTree-hololens.unity
-    guid: 7d9bc31115b3f4d44ace0aba2c51fc07
+    path: Assets/Scenes/Sections/2-MorseCode.unity
+    guid: b5efd2c4472bc634488424e7f7e2dd59
   - enabled: 1
-    path: Assets/Scenes/BinaryTree-morse-key.unity
-    guid: fa9456b8c4b7335448eb9804e36a0f0e
-  - enabled: 0
-    path: Assets/Scenes/Galvanometer-hold.unity
-    guid: e46dc2011d5958f4e94083d361ef249e
+    path: Assets/Scenes/Sections/3-Galvanometer.unity
+    guid: 6ab2930e40697614d86e0cefb1591d2f
   - enabled: 1
-    path: Assets/Scenes/Galvanometer.unity
-    guid: edd93bd662402f3459dab2e5251a9379
+    path: Assets/Scenes/Sections/4-Part1.unity
+    guid: d2e842c7e17c49549a05232e7cb80af1
   - enabled: 1
-    path: Assets/Scenes/BinaryTree.unity
-    guid: 715e738b5e8a11b408bbec3ac3cc2a02
+    path: Assets/Scenes/Sections/5-Part2.unity
+    guid: 6696a0f7f663ab24daebdd94478dead8
   - enabled: 1
-    path: Assets/Scenes/Galvanometer-models.unity
-    guid: 0bc13bf8cf30f834787bb61ae505ebd2
+    path: Assets/Scenes/Sections/6-Part3.unity
+    guid: 50cbda7c72a08554182d6677e6a10216
+  - enabled: 1
+    path: Assets/Scenes/Sections/7-Radio.unity
+    guid: 57c4029c81e09d6449504c9c697b5d65
+  - enabled: 1
+    path: Assets/Scenes/Sections/8-Sea.unity
+    guid: f2a3e2ed1427be54ea315e179046c8e4
+  - enabled: 1
+    path: Assets/Scenes/Sections/9-exit.unity
+    guid: 4e4e76f7731997f4f8c3e75edf739c1c
