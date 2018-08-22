@@ -11,7 +11,7 @@ public class SceneController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        SceneManager.LoadScene(availableScenes[startingScene], LoadSceneMode.Additive);
+        //SceneManager.LoadScene(availableScenes[startingScene], LoadSceneMode.Additive);
     }
 	
 	// Update is called once per frame
