@@ -9,6 +9,7 @@ public class SceneController : MonoBehaviour {
     public PositionList sceneList;
     public int startingScene = 0;
     public bool scenesLoaded = false;
+    public GameObject stage = null;
 
     // Use this for initialization
     void Start()
@@ -35,6 +36,15 @@ public class SceneController : MonoBehaviour {
             this.sceneList = JsonUtility.FromJson<PositionList>(www.downloadHandler.text);
             this.scenesLoaded = true;
             Debug.Log("Number of Positions: " + sceneList.positions.Length);
+            this.displayScenes();
+
+        }
+    }
+
+    void displayScenes()
+    {
+        for (int i = 0; i < this.sceneList.positions.Length; i++)
+        {
 
         }
     }
