@@ -47,7 +47,6 @@ public class SceneController : MonoBehaviour {
         {
             StartCoroutine(this.AsyncSceneLoader(this.sceneList.positions[i].name, i));
         }
-
     }
 
 
@@ -65,6 +64,8 @@ public class SceneController : MonoBehaviour {
         // get the container object in new scene
         GameObject newObject = GameObject.Find(sceneName);
 
+        newObject.transform.parent = this.stage.transform;
+
         // create a new position
         Vector3 newPosition = new Vector3(
             float.Parse(this.sceneList.positions[index].posx),
@@ -74,8 +75,6 @@ public class SceneController : MonoBehaviour {
 
         // position the new object
         newObject.transform.position = newPosition;
-
-        
 
         Quaternion newRotation = new Quaternion(
             float.Parse(this.sceneList.positions[index].rotx),
