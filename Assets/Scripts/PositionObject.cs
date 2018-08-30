@@ -13,6 +13,7 @@ public class PositionObject
     public string rotx;
     public string roty;
     public string rotz;
+    public string rotw;
     public string scale;
     
 }

@@ -45,8 +45,46 @@ public class SceneController : MonoBehaviour {
     {
         for (int i = 0; i < this.sceneList.positions.Length; i++)
         {
-            // Only specifying the sceneName or sceneBuildIndex will load the Scene with the Single mode
-            SceneManager.LoadScene(this.sceneList.positions[i].name, LoadSceneMode.Additive);
+            StartCoroutine(this.AsyncSceneLoader(this.sceneList.positions[i].name, i));
         }
+
+    }
+
+
+    IEnumerator AsyncSceneLoader(string sceneName, int index)
+    {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
+        asyncLoad.allowSceneActivation = true;
+
+        // Wait until the asynchronous scene fully loads
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
+
+        // get the container object in new scene
+        GameObject newObject = GameObject.Find(sceneName);
+
+        // create a new position
+        Vector3 newPosition = new Vector3(
+            float.Parse(this.sceneList.positions[index].posx),
+            float.Parse(this.sceneList.positions[index].posy),
+            float.Parse(this.sceneList.positions[index].posz)
+        );
+
+        // position the new object
+        newObject.transform.position = newPosition;
+
+        
+
+        Quaternion newRotation = new Quaternion(
+            float.Parse(this.sceneList.positions[index].rotx),
+            float.Parse(this.sceneList.positions[index].roty),
+            float.Parse(this.sceneList.positions[index].rotz),
+            float.Parse(this.sceneList.positions[index].rotw)
+        );
+
+        newObject.transform.rotation = newRotation;
+
     }
 }
