@@ -21,7 +21,7 @@ public class StagePosition : MonoBehaviour {
         {
             if (target.transform.position != this.prevPosition)
             {
-                transform.position -= target.transform.position;
+                transform.position = target.transform.position;
                 this.prevPosition = target.transform.position;
                 Debug.Log("Changed Position");
             }

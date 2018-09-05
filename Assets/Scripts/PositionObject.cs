@@ -23,5 +23,17 @@ public class PositionObject
 public class PositionList
 {
     public PositionObject[] positions;
+
+    public PositionObject FindByString(string name)
+    {
+        for (int i = 0; i < this.positions.Length; i++)
+        {
+            if (positions[i].name == name)
+            {
+                return positions[i];
+            }
+        }
+        return null;
+    }
 }
 

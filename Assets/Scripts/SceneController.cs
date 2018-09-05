@@ -11,6 +11,9 @@ public class SceneController : MonoBehaviour {
     public bool scenesLoaded = false;
     public GameObject stage = null;
 
+    private PositionObject datum;
+    private Vector3 datumVector;
+
     // Use this for initialization
     void Start()
     {
@@ -33,8 +36,16 @@ public class SceneController : MonoBehaviour {
                 Debug.Log("Positions Loaded!");
             }
 
+            // TODO: Validate sceneList before going on!
             this.sceneList = JsonUtility.FromJson<PositionList>(www.downloadHandler.text);
             this.scenesLoaded = true;
+
+            this.datum = this.sceneList.FindByString("1-Datum");
+            this.datumVector = new Vector3(
+                -float.Parse(this.datum.posx), 
+                -float.Parse(this.datum.posy), 
+                -float.Parse(this.datum.posz));
+            
             Debug.Log("Number of Positions: " + sceneList.positions.Length);
             this.displayScenes();
 
@@ -84,6 +95,12 @@ public class SceneController : MonoBehaviour {
         );
 
         newObject.transform.rotation = newRotation;
+
+        newObject.transform.position += this.datumVector;
+
+        // remove scene to tidy things up
+        // by closing the scenes
+        SceneManager.UnloadSceneAsync(sceneName);
 
     }
 }
