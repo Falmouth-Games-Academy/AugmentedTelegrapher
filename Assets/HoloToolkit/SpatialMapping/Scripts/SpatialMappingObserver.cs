@@ -194,7 +194,6 @@ namespace HoloToolkit.Unity.SpatialMapping
             base.Awake();
 
             ObserverState = ObserverStates.Stopped;
-            // TrianglesPerCubicMeter = 1200;
         }
 
 #if UNITY_WSA

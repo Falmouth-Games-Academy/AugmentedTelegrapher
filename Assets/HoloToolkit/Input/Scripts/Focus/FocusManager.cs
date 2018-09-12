@@ -73,6 +73,8 @@ namespace HoloToolkit.Unity.InputModule
         [SerializeField]
         private float pointingExtent = 10f;
 
+        public float GlobalPointingExtent { get { return pointingExtent; } }
+
         /// <summary>
         /// The LayerMasks, in prioritized order, that are used to determine the HitObject when raycasting.
         ///
@@ -343,25 +345,24 @@ namespace HoloToolkit.Unity.InputModule
 
         public GameObject TryGetFocusedObject(BaseEventData eventData)
         {
-            FocusDetails? details = TryGetFocusDetails(eventData);
-
-            if (details == null)
-            {
-                return null;
-            }
-
             IPointingSource pointingSource;
             TryGetPointingSource(eventData, out pointingSource);
             PointerInputEventData pointerInputEventData = GetSpecificPointerEventData(pointingSource);
 
-            Debug.Assert(pointerInputEventData != null);
-            pointerInputEventData.selectedObject = details.Value.Object;
-
-            return details.Value.Object;
+            // GetSpecificPointerEventData can return null. Be sure to handle that case.
+            if (pointerInputEventData == null)
+            {
+                return null;
+            }
+            return pointerInputEventData.selectedObject;
         }
 
         public bool TryGetPointingSource(BaseEventData eventData, out IPointingSource pointingSource)
         {
+            // pre-initialize pointingSource to null, assuming we will return false
+            pointingSource = null;
+            if (eventData == null) { return false; }
+
             for (int i = 0; i < pointers.Count; i++)
             {
                 if (pointers[i].PointingSource.OwnsInput(eventData))
@@ -371,7 +372,6 @@ namespace HoloToolkit.Unity.InputModule
                 }
             }
 
-            pointingSource = null;
             return false;
         }
 
@@ -440,7 +440,11 @@ namespace HoloToolkit.Unity.InputModule
         public PointerInputEventData GetSpecificPointerEventData(IPointingSource pointer)
         {
             PointerData pointerEventData;
-            return GetPointerData(pointer, out pointerEventData) ? pointerEventData.UnityUIPointerData : null;
+
+            if (!GetPointerData(pointer, out pointerEventData)) { return null; }
+
+            pointerEventData.UnityUIPointerData.selectedObject = GetFocusedObject(pointer);
+            return pointerEventData.UnityUIPointerData;
         }
 
         public float GetPointingExtent(IPointingSource pointingSource)
@@ -607,7 +611,6 @@ namespace HoloToolkit.Unity.InputModule
 
         private void RaycastUnityUI(PointerData pointer, LayerMask[] prioritizedLayerMasks)
         {
-            Debug.Assert(pointer.End.Point != Vector3.zero, "No pointer source end point found to raycast against!");
             Debug.Assert(UIRaycastCamera != null, "You must assign a UIRaycastCamera on the FocusManager before you can process uGUI raycasting.");
 
             RaycastResult uiRaycastResult = default(RaycastResult);

@@ -71,7 +71,9 @@ namespace HoloToolkit.Unity
                 using (var webRequest = UnityWebRequest.Get(query))
                 {
                     webRequest.SetRequestHeader("Authorization", auth);
+#if UNITY_2017_1_OR_NEWER
                     webRequest.timeout = (int)TimeOut;
+#endif
 
 #if UNITY_2017_2_OR_NEWER
                     webRequest.SendWebRequest();
@@ -94,11 +96,11 @@ namespace HoloToolkit.Unity
                     }
 
                     if (
-#if UNITY_2017_2_OR_NEWER
+#if UNITY_2017_1_OR_NEWER
                         webRequest.isNetworkError || webRequest.isHttpError && 
 #else
                         webRequest.isError &&
-#endif
+#endif // UNITY_2017_1_OR_NEWER
                         webRequest.responseCode != 401)
                     {
                         string response = string.Empty;
@@ -149,7 +151,9 @@ namespace HoloToolkit.Unity
                 using (var webRequest = UnityWebRequest.Post(query, postData))
                 {
                     webRequest.SetRequestHeader("Authorization", auth);
+#if UNITY_2017_1_OR_NEWER
                     webRequest.timeout = (int)TimeOut;
+#endif
 
                     // HACK: Workaround for extra quotes around boundary.
                     string contentType = webRequest.GetRequestHeader("Content-Type");
@@ -182,11 +186,11 @@ namespace HoloToolkit.Unity
                     EditorUtility.ClearProgressBar();
 
                     if (
-#if UNITY_2017_2_OR_NEWER
-                        webRequest.isNetworkError || webRequest.isHttpError && 
+#if UNITY_2017_1_OR_NEWER
+                        webRequest.isNetworkError || webRequest.isHttpError &&
 #else
                         webRequest.isError &&
-#endif
+#endif // UNITY_2017_1_OR_NEWER
                         webRequest.responseCode != 401)
                     {
                         string response = string.Empty;
@@ -236,7 +240,9 @@ namespace HoloToolkit.Unity
                 using (var webRequest = UnityWebRequest.Delete(query))
                 {
                     webRequest.SetRequestHeader("Authorization", auth);
+#if UNITY_2017_1_OR_NEWER
                     webRequest.timeout = (int)TimeOut;
+#endif
 
 #if UNITY_2017_2_OR_NEWER
                     webRequest.SendWebRequest();
@@ -256,11 +262,11 @@ namespace HoloToolkit.Unity
                     EditorUtility.ClearProgressBar();
 
                     if (
-#if UNITY_2017_2_OR_NEWER
-                        webRequest.isNetworkError || webRequest.isHttpError && 
+#if UNITY_2017_1_OR_NEWER
+                        webRequest.isNetworkError || webRequest.isHttpError &&
 #else
                         webRequest.isError &&
-#endif
+#endif // UNITY_2017_1_OR_NEWER
                         webRequest.responseCode != 401)
                     {
                         string response = string.Empty;
