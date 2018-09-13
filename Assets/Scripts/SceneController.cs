@@ -6,13 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour {
 
-    public PositionList sceneList;
+    public PositionList rawPositionData;
+    public PositionObject[] sceneList;
     public int startingScene = 0;
     public bool scenesLoaded = false;
     public GameObject stage = null;
-
-    private PositionObject datum;
-    private Vector3 datumVector;
 
     // Use this for initialization
     void Start()
@@ -37,16 +35,15 @@ public class SceneController : MonoBehaviour {
             }
 
             // TODO: Validate sceneList before going on!
-            this.sceneList = JsonUtility.FromJson<PositionList>(www.downloadHandler.text);
+            this.rawPositionData = JsonUtility.FromJson<PositionList>(www.downloadHandler.text);
             this.scenesLoaded = true;
 
-            this.datum = this.sceneList.FindByString("1-Datum");
-            this.datumVector = new Vector3(
-                -float.Parse(this.datum.posx), 
-                -float.Parse(this.datum.posy), 
-                -float.Parse(this.datum.posz));
-            
-            Debug.Log("Number of Positions: " + sceneList.positions.Length);
+            // orient the stage to datum 
+            PositionObject datum = rawPositionData.FindByString("1-Datum");
+           
+
+            sceneList = rawPositionData.CalculateOffsets("1-Datum");
+
             this.displayScenes();
 
         }
@@ -54,9 +51,9 @@ public class SceneController : MonoBehaviour {
 
     void displayScenes()
     {
-        for (int i = 0; i < this.sceneList.positions.Length; i++)
+        for (int i = 0; i < this.sceneList.Length; i++)
         {
-            StartCoroutine(this.AsyncSceneLoader(this.sceneList.positions[i].name, i));
+            StartCoroutine(this.AsyncSceneLoader(this.sceneList[i].name, i));
         }
     }
 
@@ -75,28 +72,20 @@ public class SceneController : MonoBehaviour {
         // get the container object in new scene
         GameObject newObject = GameObject.Find(sceneName);
 
-        newObject.transform.parent = this.stage.transform;
+        newObject.transform.parent = stage.transform;
+
+        Quaternion rot = this.sceneList[index].Rotation();
+        newObject.transform.localRotation = Quaternion.Inverse(rot);
 
         // create a new position
         Vector3 newPosition = new Vector3(
-            float.Parse(this.sceneList.positions[index].posx),
-            float.Parse(this.sceneList.positions[index].posy),
-            float.Parse(this.sceneList.positions[index].posz)
+            this.sceneList[index].posx * -1,
+            this.sceneList[index].posy,
+            this.sceneList[index].posz * -1
         );
 
         // position the new object
         newObject.transform.position = newPosition;
-
-        Quaternion newRotation = new Quaternion(
-            float.Parse(this.sceneList.positions[index].rotx),
-            float.Parse(this.sceneList.positions[index].roty),
-            float.Parse(this.sceneList.positions[index].rotz),
-            float.Parse(this.sceneList.positions[index].rotw)
-        );
-
-        newObject.transform.rotation = newRotation;
-
-        newObject.transform.position += this.datumVector;
 
         // remove scene to tidy things up
         // by closing the scenes

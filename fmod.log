@@ -8,7 +8,7 @@
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000000007BF31248 isAsync 1 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000000005664F4B8 isAsync 1 updatePeriod 0.02
 [LOG] Thread::initThread                       : Init FMOD Studio update thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
@@ -28,14 +28,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 50560
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 26240
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000821CF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000596AF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFEBA3E310
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFEBA3E2E0
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFEBA3E3E0
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFEBA3E490
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000007E2F5C68
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000047809C28
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='Multimedia_Internet_CDRom_Flash_Digital_Toy_Beep_Electronic_Fast_01 064-100 - Trimmed (4)', format=2, channels=2, frequency=48000, lengthbytes=1088, lengthpcm=3257, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.380402.
@@ -44,14 +44,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 50560
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 26240
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000821CF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000596AF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFEBA3E310
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFEBA3E2E0
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFEBA3E3E0
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFEBA3E490
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000007E2F5C68
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000047809C28
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='Multimedia_Internet_CDRom_Flash_Digital_Toy_Beep_Electronic_Fast_01 064-100', format=2, channels=2, frequency=48000, lengthbytes=9568, lengthpcm=38284, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.445862.
@@ -60,14 +60,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 50560
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 26240
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000821CF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000596AF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFEBA3E310
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFEBA3E2E0
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFEBA3E3E0
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFEBA3E490
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000007E2F5C68
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000047809C28
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='Minimal_UI_12 000-046', format=2, channels=2, frequency=48000, lengthbytes=2432, lengthpcm=7512, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.991908.
@@ -76,14 +76,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 50560
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 26240
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000821CF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000596AF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFEBA3E310
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFEBA3E2E0
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFEBA3E3E0
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFEBA3E490
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000007E2F5C68
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000047809C28
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='Multimedia_Internet_CDRom_Flash_Digital_Toy_Beep_Electronic_Fast_01 064-100 - Trimmed (7)', format=2, channels=2, frequency=48000, lengthbytes=1088, lengthpcm=3257, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.380402.
@@ -92,14 +92,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 50560
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 26240
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000821CF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000596AF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFEBA3E310
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFEBA3E2E0
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFEBA3E3E0
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFEBA3E490
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000007E2F5C68
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000047809C28
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='Minimal_UI_12', format=2, channels=2, frequency=48000, lengthbytes=4544, lengthpcm=16325, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.991908.
@@ -108,14 +108,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 50560
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 26240
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000821CF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000596AF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFEBA3E310
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFEBA3E2E0
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFEBA3E3E0
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFEBA3E490
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000007E2F5C68
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000047809C28
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='Multimedia_Internet_CDRom_Flash_Digital_Toy_Beep_Electronic_Fast_01 064-100 - Trimmed (8)', format=2, channels=2, frequency=48000, lengthbytes=1088, lengthpcm=3257, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.380402.
@@ -124,14 +124,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 50560
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 26240
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000821CF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000596AF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFEBA3E310
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFEBA3E2E0
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFEBA3E3E0
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFEBA3E490
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000007E2F5C68
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000047809C28
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='Multimedia_Internet_CDRom_Flash_Digital_Toy_Beep_Electronic_Fast_01 064-100 - Trimmed (6)', format=2, channels=2, frequency=48000, lengthbytes=1088, lengthpcm=3257, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.380402.
@@ -140,14 +140,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 50560
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 26240
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000821CF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000596AF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFEBA3E310
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFEBA3E2E0
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFEBA3E3E0
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFEBA3E490
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000007E2F5C68
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000047809C28
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='Multimedia_Internet_CDRom_Flash_Digital_Toy_Beep_Electronic_Fast_01 064-100 - Trimmed', format=2, channels=2, frequency=48000, lengthbytes=1088, lengthpcm=3257, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.380402.
@@ -156,14 +156,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 50560
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 26240
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000821CF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000596AF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFEBA3E310
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFEBA3E2E0
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFEBA3E3E0
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFEBA3E490
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000007E2F5C68
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000047809C28
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='BB_DRL__103 002-071', format=2, channels=1, frequency=48000, lengthbytes=2496, lengthpcm=11230, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.778625.
@@ -172,14 +172,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 50560
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 26240
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000821CF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000596AF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFEBA3E310
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFEBA3E2E0
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFEBA3E3E0
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFEBA3E490
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000007E2F5C68
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000047809C28
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='CK_Sensors-15', format=2, channels=2, frequency=48000, lengthbytes=6304, lengthpcm=30367, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.943613.
@@ -188,14 +188,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 50560
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 26240
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000821CF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000596AF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFEBA3E310
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFEBA3E2E0
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFEBA3E3E0
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFEBA3E490
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000007E2F5C68
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000047809C28
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='BB_DRL__112', format=2, channels=1, frequency=48000, lengthbytes=9600, lengthpcm=78464, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.805850.
@@ -204,14 +204,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 50560
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 26240
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000821CF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000596AF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFEBA3E310
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFEBA3E2E0
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFEBA3E3E0
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFEBA3E490
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000007E2F5C68
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000047809C28
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='Multimedia_Internet_CDRom_Flash_Digital_Toy_Beep_Electronic_Fast_01 064-100 - Trimmed (5)', format=2, channels=2, frequency=48000, lengthbytes=1088, lengthpcm=3257, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.380402.
@@ -220,14 +220,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 50560
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 26240
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000821CF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000596AF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFEBA3E310
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFEBA3E2E0
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFEBA3E3E0
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFEBA3E490
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000007E2F5C68
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000047809C28
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='Minimal_UI_36', format=2, channels=2, frequency=48000, lengthbytes=5472, lengthpcm=25309, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
@@ -236,14 +236,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 50560
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 26240
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000821CF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000596AF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFEBA3E310
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFEBA3E2E0
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFEBA3E3E0
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFEBA3E490
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000007E2F5C68
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000047809C28
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='Multimedia_Internet_CDRom_Flash_Digital_Toy_Beep_Electronic_Fast_01 064-100 - Trimmed (2)', format=2, channels=2, frequency=48000, lengthbytes=1088, lengthpcm=3257, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.380402.
@@ -252,47 +252,47 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 50560
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 26240
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000821CF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000596AF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFEBA3E310
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFEBA3E2E0
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFEBA3E3E0
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFEBA3E490
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000007E2F5C68
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000047809C28
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='Multimedia_Internet_CDRom_Flash_Digital_Toy_Beep_Electronic_Fast_01 064-100 - Trimmed (3)', format=2, channels=2, frequency=48000, lengthbytes=1088, lengthpcm=3257, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.380402.
-[LOG] SoundI::release                          :  (000000007D962588)
-[LOG] SoundI::release                          :     Minimal_UI_36 (000000007BFDF1C8)
-[LOG] SoundI::release                          :  (000000007D95E368)
-[LOG] SoundI::release                          :     Minimal_UI_12 (000000007BFDCE08)
-[LOG] SoundI::release                          :  (000000007D960758)
-[LOG] SoundI::release                          :     CK_Sensors-15 (000000007BFE0548)
-[LOG] SoundI::release                          :  (000000007D9622A8)
-[LOG] SoundI::release                          :     BB_DRL__112 (000000007BFDE808)
-[LOG] SoundI::release                          :  (000000007D95D508)
-[LOG] SoundI::release                          :     Multimedia_Internet_CDRom_Flash_Digital_Toy_Beep_Electronic_Fast_01 064-100 (000000007BFDCAC8)
-[LOG] SoundI::release                          :  (000000007D95D7E8)
-[LOG] SoundI::release                          :     Minimal_UI_12 000-046 (000000007BFDCC68)
-[LOG] SoundI::release                          :  (000000007D95DAC8)
-[LOG] SoundI::release                          :     Multimedia_Internet_CDRom_Flash_Digital_Toy_Beep_Electronic_Fast_01 064-100 - Trimmed (7) (000000007BFDFB88)
-[LOG] SoundI::release                          :  (000000007D960028)
-[LOG] SoundI::release                          :     Multimedia_Internet_CDRom_Flash_Digital_Toy_Beep_Electronic_Fast_01 064-100 - Trimmed (2) (000000007BFDE9A8)
-[LOG] SoundI::release                          :  (000000007D961FC8)
-[LOG] SoundI::release                          :     Multimedia_Internet_CDRom_Flash_Digital_Toy_Beep_Electronic_Fast_01 064-100 - Trimmed (6) (000000007BFDE668)
-[LOG] SoundI::release                          :  (000000007D95F4A8)
-[LOG] SoundI::release                          :     Multimedia_Internet_CDRom_Flash_Digital_Toy_Beep_Electronic_Fast_01 064-100 - Trimmed (4) (000000007BFDE328)
-[LOG] SoundI::release                          :  (000000007D9626F8)
-[LOG] SoundI::release                          :     BB_DRL__103 002-071 (000000007BFDECE8)
-[LOG] SoundI::release                          :  (000000007D960A38)
-[LOG] SoundI::release                          :     Multimedia_Internet_CDRom_Flash_Digital_Toy_Beep_Electronic_Fast_01 064-100 - Trimmed (000000007BFDAF28)
-[LOG] SoundI::release                          :  (000000007D9636C8)
-[LOG] SoundI::release                          :     Multimedia_Internet_CDRom_Flash_Digital_Toy_Beep_Electronic_Fast_01 064-100 - Trimmed (5) (000000007BFDD968)
-[LOG] SoundI::release                          :  (000000007D95DC38)
-[LOG] SoundI::release                          :     Multimedia_Internet_CDRom_Flash_Digital_Toy_Beep_Electronic_Fast_01 064-100 - Trimmed (8) (000000007BFDDE48)
-[LOG] SoundI::release                          :  (000000007D961CE8)
-[LOG] SoundI::release                          :     Multimedia_Internet_CDRom_Flash_Digital_Toy_Beep_Electronic_Fast_01 064-100 - Trimmed (3) (000000007BFDEB48)
+[LOG] SoundI::release                          :  (000000005BC72888)
+[LOG] SoundI::release                          :     Minimal_UI_36 (000000006434FAE8)
+[LOG] SoundI::release                          :  (00000000567B3BC8)
+[LOG] SoundI::release                          :     Minimal_UI_12 (000000005A92BBE8)
+[LOG] SoundI::release                          :  (000000005BC722C8)
+[LOG] SoundI::release                          :     CK_Sensors-15 (000000006434F608)
+[LOG] SoundI::release                          :  (000000005BC725A8)
+[LOG] SoundI::release                          :     BB_DRL__112 (000000006434FC88)
+[LOG] SoundI::release                          :  (00000000567B4748)
+[LOG] SoundI::release                          :     Multimedia_Internet_CDRom_Flash_Digital_Toy_Beep_Electronic_Fast_01 064-100 (000000005A92B708)
+[LOG] SoundI::release                          :  (00000000567B4018)
+[LOG] SoundI::release                          :     Minimal_UI_12 000-046 (000000005A92BA48)
+[LOG] SoundI::release                          :  (00000000567B45D8)
+[LOG] SoundI::release                          :     Multimedia_Internet_CDRom_Flash_Digital_Toy_Beep_Electronic_Fast_01 064-100 - Trimmed (7) (000000005A92C0C8)
+[LOG] SoundI::release                          :  (000000005BC729F8)
+[LOG] SoundI::release                          :     Multimedia_Internet_CDRom_Flash_Digital_Toy_Beep_Electronic_Fast_01 064-100 - Trimmed (2) (000000006434F2C8)
+[LOG] SoundI::release                          :  (00000000590ADB08)
+[LOG] SoundI::release                          :     Multimedia_Internet_CDRom_Flash_Digital_Toy_Beep_Electronic_Fast_01 064-100 - Trimmed (6) (000000005A384E78)
+[LOG] SoundI::release                          :  (00000000567B5E48)
+[LOG] SoundI::release                          :     Multimedia_Internet_CDRom_Flash_Digital_Toy_Beep_Electronic_Fast_01 064-100 - Trimmed (4) (000000005A92B8A8)
+[LOG] SoundI::release                          :  (000000005BC72CD8)
+[LOG] SoundI::release                          :     BB_DRL__103 002-071 (000000005A3854F8)
+[LOG] SoundI::release                          :  (00000000590ADDE8)
+[LOG] SoundI::release                          :     Multimedia_Internet_CDRom_Flash_Digital_Toy_Beep_Electronic_Fast_01 064-100 - Trimmed (000000005A3851B8)
+[LOG] SoundI::release                          :  (000000005BC72158)
+[LOG] SoundI::release                          :     Multimedia_Internet_CDRom_Flash_Digital_Toy_Beep_Electronic_Fast_01 064-100 - Trimmed (5) (000000006434F468)
+[LOG] SoundI::release                          :  (00000000567B48B8)
+[LOG] SoundI::release                          :     Multimedia_Internet_CDRom_Flash_Digital_Toy_Beep_Electronic_Fast_01 064-100 - Trimmed (8) (000000005A92BF28)
+[LOG] SoundI::release                          :  (000000005BC72718)
+[LOG] SoundI::release                          :     Multimedia_Internet_CDRom_Flash_Digital_Toy_Beep_Electronic_Fast_01 064-100 - Trimmed (3) (000000006434F7A8)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients

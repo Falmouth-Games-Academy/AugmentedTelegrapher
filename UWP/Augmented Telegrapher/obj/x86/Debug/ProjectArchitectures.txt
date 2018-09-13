@@ -1,0 +1,4 @@
+C:\Users\Developer\Documents\AlcwynParker\AugmentedTelegrapher\UWP\Augmented Telegrapher\Augmented Telegrapher.csproj;x86
+C:\Users\Developer\Documents\AlcwynParker\AugmentedTelegrapher\UWP\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86
+C:\Users\Developer\Documents\AlcwynParker\AugmentedTelegrapher\UWP\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;x86
+C:\Users\Developer\Documents\AlcwynParker\AugmentedTelegrapher\UWP\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;x86
