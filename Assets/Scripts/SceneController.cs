@@ -79,9 +79,9 @@ public class SceneController : MonoBehaviour {
 
         // create a new position
         Vector3 newPosition = new Vector3(
-            this.sceneList[index].posx * -1,
+            this.sceneList[index].posx,
             this.sceneList[index].posy,
-            this.sceneList[index].posz * -1
+            this.sceneList[index].posz
         );
 
         // position the new object

@@ -290,12 +290,12 @@ public class BinaryTree : MonoBehaviour {
         rootNodeScript.insert(61,   '9');
         rootNodeScript.insert(63,   '0');
 
-        transform.localScale = new Vector3(0.4f, 0.4f, 0.4f);
+        transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
 
         Vector3 pos = transform.position;
-        pos.z = 60;
+        pos.z = 0;
         pos.y = 0;
-        pos.x = 6;
+        pos.x = 0;
         transform.position = pos;
     }
 

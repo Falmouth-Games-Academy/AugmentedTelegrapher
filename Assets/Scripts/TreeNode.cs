@@ -276,7 +276,7 @@ public class TreeNode : MonoBehaviour {
         LineRenderer leftLine = leftJoin.AddComponent<LineRenderer>();
 
         leftLine.material = new Material(Shader.Find("Sprites/Default"));
-        leftLine.widthMultiplier = 0.1f;
+        leftLine.widthMultiplier = 0.01f;
         leftLine.positionCount = 2;
         leftLine.useWorldSpace = false;
         // A simple 2 color gradient with a fixed alpha of 1.0f.
@@ -311,7 +311,7 @@ public class TreeNode : MonoBehaviour {
         LineRenderer rightLine = rightJoin.AddComponent<LineRenderer>();
 
         rightLine.material = new Material(Shader.Find("Sprites/Default"));
-        rightLine.widthMultiplier = 0.1f;
+        rightLine.widthMultiplier = 0.01f;
         rightLine.positionCount = 2;
         rightLine.useWorldSpace = false;
 

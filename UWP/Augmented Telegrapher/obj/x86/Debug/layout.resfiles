@@ -73,5 +73,6 @@ Resource.res
 SharingClient.dll
 SharingClient.pdb
 SpatialUnderstanding.dll
+SpatialUnderstanding.pdb
 Vuforia.dll
 VuforiaWrapper.dll
